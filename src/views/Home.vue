@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{ message }}</h1>
+    <div v-for="muscle in muscles">
+      {{ muscle.name }}
+    </div>
+    
   </div>
 </template>
 
+<style>
+</style>
+
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import axios from "axios";
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  data: function () {
+    return {
+      message: "Welcome to Vue.js!",
+      muscles: [],
+    };
+  },
+  created: function () {
+    this.musclesIndex();
+  },
+  methods: {
+    musclesIndex: function () {
+      console.log("in muscles index");
+      axios.get("http://localhost:3000/api/muscles").then((response) => {
+        console.log(response.data);
+        this.muscles = response.data;
+      });
+    },
+  },
+};
 </script>
