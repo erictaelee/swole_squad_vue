@@ -36,6 +36,7 @@ export default {
       message: "Click on the muscle group!",
       muscles: [],
       selectedExercise: {},
+      exercise: {},
     };
   },
   created: function () {

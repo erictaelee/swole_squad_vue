@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Muscles from '../views/Muscles.vue'
 import MusclesRandom from '../views/MusclesRandom.vue'
+import Signup from '../views/Signup.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/muscles/random',
     name: 'MusclesRandom',
     component: MusclesRandom
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Signup
   },
   {
     path: '/about',
