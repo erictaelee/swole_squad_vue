@@ -2,12 +2,21 @@
   <div class="muscles">
     <h1>{{ message }}</h1>
     
-    <button v-on:click="exercisesShow">Show Exercises </button>
+    
     <div v-for="muscle in muscles">
       {{ muscle.name }}
+      <p><button v-on:click="exercisesShow(exercise)"> Show Exercises </button></p>
       <img v-bind:src="muscle.image_url">
       <hr />
     </div>
+
+    <dialog id="exercise-details">
+      <form method="dialog">
+      <h2>Here will be some list of exercises</h2>
+      <p>name: {{ selectedExercise.name }} </p>
+      <button>Close</button>
+      </form>
+    </dialog>
     
   </div>
 </template>
@@ -26,6 +35,7 @@ export default {
     return {
       message: "Click on the muscle group!",
       muscles: [],
+      selectedExercise: {},
     };
   },
   created: function () {
@@ -39,8 +49,15 @@ export default {
         this.muscles = response.data;
       });
     },
-    exercisesShow: function () {
+    exercisesShow: function (theExercise) {
       console.log("in exercises show");
+      console.log(theExercise);
+      this.selectedExercise = theExercise;
+      document.querySelector("#exercise-details").showModal();
+      axios.get("http://localhost:3000/api/exercises").then((response) => {
+        console.log(response.data);
+        this.exercises = response.data;
+      });
     },
   },
 };
