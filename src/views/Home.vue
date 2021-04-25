@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <div v-for="muscle in muscles">
-      {{ muscle.name }}
+ 
     </div>
     
   </div>
@@ -17,21 +16,10 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Welcome to Vue.js!",
-      muscles: [],
+      message: "Welcome to Swole Squad Fitness App!",
     };
   },
-  created: function () {
-    this.musclesIndex();
-  },
-  methods: {
-    musclesIndex: function () {
-      console.log("in muscles index");
-      axios.get("http://localhost:3000/api/muscles").then((response) => {
-        console.log(response.data);
-        this.muscles = response.data;
-      });
-    },
-  },
+  created: function () {},
+  methods: {},
 };
 </script>
