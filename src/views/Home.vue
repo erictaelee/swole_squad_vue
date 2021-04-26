@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+    <h3> Please login to continue </h3>
  
     </div>
     

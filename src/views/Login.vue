@@ -1,7 +1,8 @@
 <template>
   <div class="login">
     <form v-on:submit.prevent="submit()">
-      <h1>Login</h1>
+      <h1>Welcome to Swole Squad Fitness!</h1>
+      <h3>Please sign in to continue</h3>
       <ul>
         <li class="text-danger" v-for="error in errors" v-bind:key="error">
           {{ error }}
@@ -17,7 +18,11 @@
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
+    <br />
+  <p>Don't have an account? </p>
+  <router-link to="/signup">Sign up</router-link>
   </div>
+
 </template>
 
 <script>
@@ -43,7 +48,7 @@ export default {
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
-          this.$router.push("/");
+          this.$router.push("/muscles");
         })
         .catch((error) => {
           console.log(error.response);
