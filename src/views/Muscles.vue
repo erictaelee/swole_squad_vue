@@ -5,7 +5,7 @@
     
     <div v-for="muscle in muscles">
       {{ muscle.name }}
-      <p><button v-on:click="exercisesShow(exercise)"> Show Exercises </button></p>
+      <p><button v-on:click="exercisesShow(muscle)"> Show Exercises </button></p>
       <img v-bind:src="muscle.image_url">
       <hr />
     </div>
@@ -14,6 +14,7 @@
       <form method="dialog">
       <h2>Here will be some list of exercises</h2>
       <p>name: {{ selectedExercise.name }} </p>
+      <p v-for="exercise in selectedExercise.exercises"> {{exercise.name}} : {{ exercise.description }} </p>
       <button>Close</button>
       </form>
     </dialog>
@@ -55,10 +56,10 @@ export default {
       console.log(theExercise);
       this.selectedExercise = theExercise;
       document.querySelector("#exercise-details").showModal();
-      axios.get("http://localhost:3000/api/exercises").then((response) => {
-        console.log(response.data);
-        this.exercises = response.data;
-      });
+      // axios.get("http://localhost:3000/api/exercises").then((response) => {
+      //   console.log(response.data);
+      //   this.exercises = response.data;
+      // });
     },
   },
 };
