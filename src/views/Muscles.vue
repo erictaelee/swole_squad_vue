@@ -13,12 +13,13 @@
     <dialog id="exercise-details">
       <form method="dialog">
       <h2>Here will be some list of exercises</h2>
-      <p>name: {{ selectedExercise.name }} </p>
-      <p v-for="exercise in selectedExercise.exercises"> {{exercise.name}} : {{ exercise.description }} </p>
+      <p>name: {{ selectedMuscle.name }} </p>
+      <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button>: {{ exercise.description }} </p>
       <button>Close</button>
       </form>
     </dialog>
-    
+
+      
   </div>
 </template>
 
@@ -36,7 +37,7 @@ export default {
     return {
       message: "Click on the muscle group!",
       muscles: [],
-      selectedExercise: {},
+      selectedMuscle: {},
       exercise: {},
     };
   },
@@ -51,15 +52,31 @@ export default {
         this.muscles = response.data;
       });
     },
+
     exercisesShow: function (theExercise) {
       console.log("in exercises show");
       console.log(theExercise);
-      this.selectedExercise = theExercise;
+      this.selectedMuscle = theExercise;
       document.querySelector("#exercise-details").showModal();
       // axios.get("http://localhost:3000/api/exercises").then((response) => {
       //   console.log(response.data);
       //   this.exercises = response.data;
       // });
+    },
+    exercisesCarted: function (exercisesCarted) {
+      console.log(exercisesCarted);
+      console.log(this.selectedMuscle);
+      console.log("carted...");
+      var params = {
+        muscle_id: this.selectedMuscle.id,
+        exercise_id: exercisesCarted.id,
+      };
+      axios
+        .post("http://localhost:3000/api/carted_exercises", params)
+        .then((response) => {
+          console.log(response.data);
+          this.carted_exercises = response.data;
+        });
     },
   },
 };
