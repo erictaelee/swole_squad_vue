@@ -1,7 +1,8 @@
 <template>
   <div class="login">
     <form v-on:submit.prevent="submit()">
-      <h1>Welcome to Swole Squad Fitness!</h1>
+      <h1>Swole Squad Fitness</h1>
+      <br />
       <h3>Please sign in to continue</h3>
       <ul>
         <li class="text-danger" v-for="error in errors" v-bind:key="error">
