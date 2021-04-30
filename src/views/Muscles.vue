@@ -10,6 +10,14 @@
       <hr />
     </div>
 
+
+<div v-for="carted in cartedExercises">
+  {{ carted.exercise.name }} 
+  <p>
+  <a href=""> {{ carted.exercise.description }}</a></p>  </div>
+  <!-- {{ cartedExercises[0].exercise.description }}   -->
+
+
     <dialog id="exercise-details">
       <form method="dialog">
       <h2>Here will be some list of exercises</h2>
@@ -39,10 +47,12 @@ export default {
       muscles: [],
       selectedMuscle: {},
       exercise: {},
+      cartedExercises: [],
     };
   },
   created: function () {
     this.musclesIndex();
+    this.cartedIndex();
   },
   methods: {
     musclesIndex: function () {
@@ -76,6 +86,15 @@ export default {
         .then((response) => {
           console.log(response.data);
           this.carted_exercises = response.data;
+        });
+    },
+    cartedIndex: function () {
+      console.log("hello");
+      axios
+        .get("http://localhost:3000/api/carted_exercises")
+        .then((response) => {
+          console.log(response.data);
+          this.cartedExercises = response.data;
         });
     },
   },
