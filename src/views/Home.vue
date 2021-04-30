@@ -1,6 +1,17 @@
 <template>
   <div class="Home">
     <form v-on:submit.prevent="submit()">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+  
       <h1>Swole Squad Fitness</h1>
       <br />
       <h3>Please sign in to continue</h3>

@@ -30,11 +30,7 @@ const routes = [
     name: 'signup',
     component: Signup
   },
-  {
-    path: '/login',
-    name: 'login',
-    component: Login
-  },
+
   {
     path: '/logout',
     name: 'logout',
