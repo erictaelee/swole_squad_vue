@@ -1,26 +1,19 @@
 <template>
   <div id="app">
-          <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome Swole Squad Fitness!</div>
-                <div class="masthead-heading text-uppercase">Train with Eric</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Muscle Groups</a>
-            </div>
-        </header>
-                <!-- Team-->
+      
+          <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Select Your Trainer</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/eric2.jpg" alt="..." />
+                            <h4>Eric Lee</h4>
+                            <p class="text-muted">Men's Physique Competitior</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -28,22 +21,22 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/blank-avatar.jpeg" alt="..." />
+                            <h4>Coming Soon..</h4>
+                            <!-- <p class="text-muted">Lead Marketer</p> -->
+                            <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/blank-avatar.jpeg" alt="..." />
+                            <h4>Coming Soon..</h4>
+                            <!-- <p class="text-muted">Lead Developer</p> -->
+                            <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -52,6 +45,17 @@
                 </div>
             </div>
         </section>
+
+        <router-view />
+
+            <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome Swole Squad Fitness!</div>
+                <div class="masthead-heading text-uppercase">Train with Eric</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Muscle Groups</a>
+            </div>
+        </header>
         <!-- Services-->
         <!-- <section class="page-section" id="services">
             <div class="container">
@@ -91,8 +95,8 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Muscle Groups</h2>
+                    <h3 class="section-subheading text-muted">Click on the muscle group to see exercises.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -101,7 +105,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/muscle_images/Abs.jpeg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Threads</div>

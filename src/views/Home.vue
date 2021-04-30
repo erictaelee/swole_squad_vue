@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="Home">
     <form v-on:submit.prevent="submit()">
       <h1>Swole Squad Fitness</h1>
       <br />
