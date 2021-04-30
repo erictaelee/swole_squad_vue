@@ -11,10 +11,10 @@
     </div>
 
 
-<div v-for="carted in cartedExercises">
-  {{ carted.exercise.name }} 
-  <p>
-  <a href=""> {{ carted.exercise.description }}</a></p>  </div>
+<!-- <div v-for="carted in cartedExercises"> -->
+  {{ cartedExercises }} 
+  <!-- <p>
+  <a href=""> {{ carted.exercise }}</a></p>  </div> -->
   <!-- {{ cartedExercises[0].exercise.description }}   -->
 
 
