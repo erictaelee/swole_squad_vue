@@ -6,6 +6,8 @@ import MusclesRandom from '../views/MusclesRandom.vue'
 import Signup from '../views/Signup.vue'
 import Login from '../views/Login.vue'
 import Logout from '../views/Logout.vue'
+import Contact from '../views/Contact.vue'
+
 
 Vue.use(VueRouter)
 
@@ -20,6 +22,12 @@ const routes = [
     name: 'Muscles',
     component: Muscles
   },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
+
   {
     path: '/muscles/random',
     name: 'MusclesRandom',

@@ -1,5 +1,13 @@
 <template>
   <div class="login">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <form v-on:submit.prevent="submit()">
       <h1>Welcome to Swole Squad Fitness!</h1>
       <h3>Please sign in to continue</h3>
