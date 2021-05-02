@@ -6,7 +6,8 @@ import MusclesRandom from '../views/MusclesRandom.vue'
 import Signup from '../views/Signup.vue'
 import Login from '../views/Login.vue'
 import Logout from '../views/Logout.vue'
-import Contact from '../views/Contact.vue'
+import SavedExercises from '../views/SavedExercises.vue'
+import Team from '../views/Team.vue'
 
 
 Vue.use(VueRouter)
@@ -23,9 +24,14 @@ const routes = [
     component: Muscles
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
+    path: '/team',
+    name: 'Team',
+    component: Team
+  },
+  {
+    path: '/saved',
+    name: 'SavedExercises',
+    component: SavedExercises
   },
 
   {
