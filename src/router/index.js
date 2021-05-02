@@ -6,7 +6,7 @@ import MusclesRandom from '../views/MusclesRandom.vue'
 import Signup from '../views/Signup.vue'
 import Login from '../views/Login.vue'
 import Logout from '../views/Logout.vue'
-import SavedExercises from '../views/SavedExercises.vue'
+import CartedExercises from '../views/CartedExercises.vue'
 import Team from '../views/Team.vue'
 
 
@@ -29,9 +29,9 @@ const routes = [
     component: Team
   },
   {
-    path: '/saved',
-    name: 'SavedExercises',
-    component: SavedExercises
+    path: '/carted',
+    name: 'CartedExercises',
+    component: CartedExercises
   },
 
   {

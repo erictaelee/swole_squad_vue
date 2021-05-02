@@ -14,7 +14,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/team">Select Your Trainer</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/muscles">Muscles</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/saved">Your Workouts</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/carted">Your Workouts</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/login">Login</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/logout">Logout</a></li>
                 
