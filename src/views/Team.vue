@@ -39,9 +39,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Do you want to know what exercises they do to get to where they are? Click the trainer and find out how they workout their muscles. </p></div>
+                </div> -->
             </div>
         </section>
         </template>

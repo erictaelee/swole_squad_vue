@@ -209,7 +209,7 @@
   color: #42b983;
 }
 
-#nav-item li {
-  color: red;
+#login input {
+  width: 100px;
 }
 </style>

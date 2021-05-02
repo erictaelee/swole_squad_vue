@@ -1,5 +1,10 @@
 <template>
   <div class="signup">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <form v-on:submit.prevent="submit()">
       <h1>Signup</h1>
       <ul>
@@ -25,40 +30,44 @@
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
+    <br />
+  <router-link to="/">Back</router-link>
   </div>
+
 </template>
 
 <script>
 import axios from "axios";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       name: "",
       email: "",
       password: "",
       passwordConfirmation: "",
-      errors: []
+      errors: [],
     };
   },
   methods: {
-    submit: function() {
+    submit: function () {
       var params = {
         name: this.name,
         email: this.email,
         password: this.password,
-        password_confirmation: this.passwordConfirmation
+        password_confirmation: this.passwordConfirmation,
       };
       axios
         .post("/api/users", params)
-        .then(response => {
+        .then((response) => {
           console.log(response.data);
-          this.$router.push("/login");
+          this.$router.push("/home");
         })
-        .catch(error => {
+        .catch((error) => {
           this.errors = error.response.data.errors;
         });
-    }
-  }
+    },
+  },
 };
 </script>
+

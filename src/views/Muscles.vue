@@ -10,6 +10,8 @@
             </div>
         </header>
 
+        
+
           <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
@@ -31,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
@@ -100,7 +102,7 @@
                                 <div class="portfolio-caption-subheading text-muted">Photography</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -114,6 +116,8 @@
       <img v-bind:src="muscle.image_url">
       <hr />
     </div>
+
+    
 
 
 <div v-for="carted in cartedExercises">

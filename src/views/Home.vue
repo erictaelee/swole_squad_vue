@@ -68,3 +68,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.form-group {
+  padding-right: 500px;
+  padding-left: 500px;
+}
+</style>
