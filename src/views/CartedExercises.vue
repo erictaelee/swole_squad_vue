@@ -8,9 +8,11 @@
   <br />
   <br />
   <h2>Here is the list of workouts you've saved</h2>
+  <br />
 
   <div v-for="carted in cartedExercises"> 
-  {{ carted.exercise.name }} : <a href="#"> link {{ carted.exercise.description }}</a> </div>
+ <a :href="carted.exercise.description"> {{ carted.exercise.name }}</a></div>
+
 
 </div>
 </template>
