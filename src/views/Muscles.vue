@@ -19,11 +19,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4" v-for="muscle in muscles">
                         <div class="portfolio-item">
-                            <a v-bind:href="`/muscles/${muscles.id}`" class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <a v-bind:href="`/muscles/${muscles.id}`" class="portfolio-link" data-toggle="modal" href="#portfolioModal1" v-on:click="exercisesShow(muscle)">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
                                 <img class="img-fluid" v-bind:src="muscle.image_url" alt="..." />
+                                
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">{{ muscle.name }}</div>
@@ -36,24 +37,20 @@
             </div>
         </section>
 
-
-
         <!-- Portfolio Modals-->
         <!-- Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8" v-for="exercise in selectedMuscle.exercises">
+                            <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase"> {{ selectedMuscle.name }}</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    
-                                    <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button>: {{ exercise.description }} </p>
-                            
+                                 <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button> </p>   
+                                                           
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
                                         Close Project
@@ -66,10 +63,10 @@
             </div>
         </div>
 
-    <h1>{{ message }}</h1>
     
     
-    <div v-for="muscle in muscles">
+    
+    <!-- <div v-for="muscle in muscles">
       {{ muscle.name }}
       <p><button v-on:click="exercisesShow(muscle)"> Show Exercises </button></p>
       <img v-bind:src="muscle.image_url">
@@ -80,12 +77,12 @@
 
     <dialog id="exercise-details">
       <form method="dialog">
-      <h2>Here will be some list of exercises</h2>
-      <p>name: {{ selectedMuscle.name }} </p>
-      <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button>: {{ exercise.description }} </p>
+      <h3>{{ selectedMuscle.name }} </h3>
+      <br />
+      <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button> </p>
       <button>Close</button>
       </form>
-    </dialog>
+    </dialog> -->
 
 
 
@@ -134,7 +131,7 @@ export default {
       console.log("in exercises show");
       console.log(theExercise);
       this.selectedMuscle = theExercise;
-      document.querySelector("#exercise-details").showModal();
+      // document.querySelector("#exercise-details").showModal();
       // axios.get("http://localhost:3000/api/exercises").then((response) => {
       //   console.log(response.data);
       //   this.exercises = response.data;

@@ -42,6 +42,7 @@ export default {
       email: "",
       password: "",
       errors: [],
+      name: "",
     };
   },
   methods: {
@@ -56,6 +57,7 @@ export default {
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
+          localStorage.setItem("name", response.data.name);
           this.$router.push("/muscles");
         })
         .catch((error) => {

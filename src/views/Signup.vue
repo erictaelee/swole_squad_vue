@@ -61,7 +61,7 @@ export default {
         .post("/api/users", params)
         .then((response) => {
           console.log(response.data);
-          this.$router.push("/home");
+          this.$router.push("/");
         })
         .catch((error) => {
           this.errors = error.response.data.errors;
@@ -71,3 +71,9 @@ export default {
 };
 </script>
 
+<style>
+.signup {
+  background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+  background-size: cover;
+}
+</style>

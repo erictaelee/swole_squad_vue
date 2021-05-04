@@ -7,7 +7,8 @@
   <br />
   <br />
   <br />
-  <h2>Here is the list of workouts you've saved</h2>
+  {{ showName()}}
+  <h2>Here is your saved workouts</h2>
   <br />
 
   <div v-for="carted in cartedExercises"> 
@@ -24,6 +25,7 @@ export default {
   data: function () {
     return {
       cartedExercises: [],
+      name: "",
     };
   },
 
@@ -40,7 +42,12 @@ export default {
           this.cartedExercises = response.data;
         });
     },
+    showName: function () {
+      return localStorage.getItem("name");
+    },
   },
 };
 </script>
 
+<style>
+</style>

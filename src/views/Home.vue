@@ -75,4 +75,8 @@ export default {
   padding-right: 500px;
   padding-left: 500px;
 }
+.login {
+  background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+  background-size: cover;
+}
 </style>
