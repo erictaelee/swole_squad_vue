@@ -13,7 +13,7 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Muscle Groups</a>
             </div>
         </header>
-
+        <!-- Muscles-->
           <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
@@ -48,16 +48,17 @@
                 <div class="modal-content">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-6">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase"> {{ selectedMuscle.name }}</h2>
+                                    <br />
                                     <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                                 <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button> </p>   
+                                 <p v-for="exercise in selectedMuscle.exercises"> <button class="btn btn-primary" data-dismiss="modal" v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button> </p>   
                                                            
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <button class="btn btn-secondary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>

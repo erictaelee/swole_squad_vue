@@ -7,12 +7,14 @@
   <br />
   <br />
   <br />
-  <h2>Hello {{ showName()}}!</h2>
-  <h2>Here is your saved workouts</h2>
+  <!-- <h2>Hello {{ showName()}}!</h2> -->
+  <h2>Here is your saved workout list</h2>
   <br />
+  
 
-  <div v-for="carted in cartedExercises"> 
- <a :href="carted.exercise.description"> {{ carted.exercise.name }}</a></div>
+
+  <li class="list-group-item" v-for="carted in cartedExercises"> 
+ <a :href="carted.exercise.description"> {{ carted.exercise.name }}</a></li>
 
 
 </div>
@@ -50,4 +52,7 @@ export default {
 </script>
 
 <style>
+h2 {
+  color: ;
+}
 </style>
