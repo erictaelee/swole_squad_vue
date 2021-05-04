@@ -4,7 +4,11 @@
                <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome Swole Squad Fitness!</div>
+                <!-- <div class="masthead-subheading">Welcome Swole Squad Fitness!</div> -->
+                <br />
+                <br />
+                <br />
+                
                 <div class="masthead-heading text-uppercase">Train with Eric</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Muscle Groups</a>
             </div>
@@ -48,7 +52,7 @@
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase"> {{ selectedMuscle.name }}</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
                                  <p v-for="exercise in selectedMuscle.exercises"> <button v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button> </p>   
                                                            
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -164,3 +168,5 @@ export default {
   },
 };
 </script>
+
+

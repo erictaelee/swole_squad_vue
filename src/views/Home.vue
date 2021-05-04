@@ -10,8 +10,8 @@
     <br />
     <br />
     <form v-on:submit.prevent="submit()">
-      <h1>Welcome to Swole Squad Fitness!</h1>
-      <h3>Please sign in to continue</h3>
+      <h1>Swole Squad</h1>
+      <p>Please sign in to continue</p>
       <ul>
         <li class="text-danger" v-for="error in errors" v-bind:key="error">
           {{ error }}
@@ -72,11 +72,7 @@ export default {
 
 <style>
 .form-group {
-  padding-right: 500px;
-  padding-left: 500px;
-}
-.login {
-  background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
-  background-size: cover;
+  padding-right: 300px;
+  padding-left: 300px;
 }
 </style>

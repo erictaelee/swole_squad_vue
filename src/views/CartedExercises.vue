@@ -7,7 +7,7 @@
   <br />
   <br />
   <br />
-  {{ showName()}}
+  <h2>Hello {{ showName()}}!</h2>
   <h2>Here is your saved workouts</h2>
   <br />
 

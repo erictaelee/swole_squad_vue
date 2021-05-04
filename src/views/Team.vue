@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <a href="/muscles"><img class="mx-auto rounded-circle" src="assets/img/team/eric2.jpg"  alt="..." /></a>
+                            <a href="/muscles"><img class="mx-auto rounded-circle" src="assets/img/team/eric3.jpg"  alt="..." /></a>
                             <h4>Eric Lee</h4>
                             <p class="text-muted">Chicago, IL</p>
                             <p class="text-muted">Men's Physique Competitor</p>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <a href="#"><img class="mx-auto rounded-circle" src="assets/img/team/fritz.jpg" alt="..." /></a>
+                            <a href="#"><img class="mx-auto rounded-circle" src="assets/img/team/fritz2.jpg" alt="..." /></a>
                             <h4>Coming Soon..</h4>
                             <p class="text-muted">San Francisco, CA</p>
                             <p class="text-muted">Pro Men's Physique Competitor</p>

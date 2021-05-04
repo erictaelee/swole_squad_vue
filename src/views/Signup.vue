@@ -6,7 +6,7 @@
     <br />
     <br />
     <form v-on:submit.prevent="submit()">
-      <h1>Signup</h1>
+      <h1>Sign Up</h1>
       <ul>
         <li class="text-danger" v-for="error in errors" v-bind:key="error">
           {{ error }}
@@ -72,8 +72,8 @@ export default {
 </script>
 
 <style>
-.signup {
-  background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+/* .signup {
+  background-image: url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zml0bmVzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
   background-size: cover;
-}
+} */
 </style>
