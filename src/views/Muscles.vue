@@ -4,12 +4,13 @@
                <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <!-- <div class="masthead-subheading">Welcome Swole Squad Fitness!</div> -->
                 <br />
                 <br />
                 <br />
                 
                 <div class="masthead-heading text-uppercase">Train with Eric</div>
+                <div class="masthead-subheading">No Pain No Gain</div>
+                
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Show Muscle Groups</a>
             </div>
         </header>

@@ -3,6 +3,9 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
+                    <br />
+                    <h2>Welcome Arnold!</h2>
+                    <br />
                     <h2 class="section-heading text-uppercase">Select Your Trainer</h2>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
@@ -23,7 +26,7 @@
                             <a href="#"><img class="mx-auto rounded-circle" src="assets/img/team/rolando.jpg" alt="..." /></a>
                             <h4>Coming Soon..</h4>
                             <p class="text-muted">Rockford, IL</p>
-                            <p class="text-muted">Pro Men's Physique Competitor</p>
+                            <p class="text-muted">Pro Men's Body Building Competitor</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -47,4 +50,23 @@
                 </div> -->
             </div>
         </section>
-        </template>
+</template>
+
+<script>
+import axios from "axios";
+
+export default {
+  data: function () {
+    return {
+      name: "",
+    };
+  },
+
+  created: function () {},
+  methods: {
+    showName: function () {
+      return localStorage.getItem("name");
+    },
+  },
+};
+</script>

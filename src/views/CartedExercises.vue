@@ -6,8 +6,10 @@
  
   <br />
   <!-- <h2>Hello {{ showName()}}!</h2> -->
-  <h2 class="text-uppercase"> Here is your saved workout list </h2>
   <br />
+  <h2 class="text-uppercase"> Here is your saved workout list </h2>
+  <p>Number of reps: 10-12</p>
+  <p>Number of sets: 4</p>
   <br />
   
 
@@ -52,6 +54,9 @@ export default {
 
 <style>
 h2 {
-  color: ;
+  font-size: 40px;
+}
+li {
+  font-size: 20px;
 }
 </style>
