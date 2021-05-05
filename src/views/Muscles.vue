@@ -53,6 +53,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase"> {{ selectedMuscle.name }}</h2>
                                     <br />
+                                    <br />
                                     <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
                                  <p v-for="exercise in selectedMuscle.exercises"> <button class="btn btn-primary" data-dismiss="modal" v-on:click="exercisesCarted(exercise)">{{exercise.name}}</button> </p>   
                                                            

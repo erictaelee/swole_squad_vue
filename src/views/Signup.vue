@@ -35,7 +35,7 @@
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
     <br />
-  <router-link to="/">Back</router-link>
+  <router-link to="/login">Back</router-link>
   </div>
 
 </template>

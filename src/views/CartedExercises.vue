@@ -3,12 +3,11 @@
   <br />
   <br />
   <br />
-  <br />
-  <br />
-  <br />
+ 
   <br />
   <!-- <h2>Hello {{ showName()}}!</h2> -->
-  <h2>Here is your saved workout list</h2>
+  <h2 class="text-uppercase"> Here is your saved workout list </h2>
+  <br />
   <br />
   
 
