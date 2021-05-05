@@ -1,12 +1,20 @@
 <template>
+<header class="homehome">
+            <br />
+            <br />
+            <br />
+            <br />
+  <div class="container">
+    <div class="homehome-subheading">Welcome Swole Squad Fitness</div>
+        <div class="homehome-heading text-uppercase">Select a trainer and follow their exercises. </div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/login">Login to Continue</a>
+            <br />
+            <br />
+            <br />
+            <br />
+  </div>
+</header>
 
-<header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome Swole Squad Fitness</div>
-                <div class="masthead-heading text-uppercase">Select a trainer and follow their exercises. </div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/login">Login to Continue</a>
-            </div>
-        </header>
 
 </template>
 
