@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="text-center">
                     <br />
-                    <h2>Welcome Arnold!</h2>
+                    <!-- <h2>Welcome Arnold!</h2> -->
                     <br />
                     <h2 class="section-heading text-uppercase">Select Your Trainer</h2>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
