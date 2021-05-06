@@ -10,7 +10,7 @@ The exercises are divided by each muscle group so a user can save the exercise t
 
 
 Future Functions to add:
-- Add meal prep functions
+- Meal prep functions
 - Create a dashboard for the users and log workouts 
 - Rate trainers
 - Search trainers by location 
